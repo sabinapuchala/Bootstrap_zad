@@ -34,11 +34,14 @@ section .section-header {
     font-weight: 300;
 }
 
+
 /*Navigation*/
 
 #main-nav {
-    position: fixed;
-    top: 0;
+    /*
+        position: fixed;
+        top: 0;
+    */
     background-color: transparent;
     width: 100%;
     z-index: 10;
@@ -47,7 +50,7 @@ section .section-header {
 
 #main-nav ul {
     margin: 0;
-    text-align: right;
+    /*    text-align: right;*/
     list-style: none;
 }
 #main-nav.scroll {
@@ -79,10 +82,12 @@ section .section-header {
 #main-nav #drop,  #main-nav .toggle {
     display: none;
 }
+
+
 /*Header styles*/
 
 #main-header {
-    position: relative;
+    /*    position: relative;*/
     background-image: url(../img/header-background.jpg);
     background-size: cover;
     background-position: center;
@@ -90,12 +95,12 @@ section .section-header {
 }
 
 #main-header .main-header-content {
-    position: absolute;
+    /*    position: absolute;*/
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
+    /*    text-align: center;*/
+    /*    color: #fff;*/
 }
 
 #main-header .main-header-content h1 {
@@ -116,16 +121,16 @@ section .section-header {
 }
 
 #about figure {
-    display: inline-block;
+    /*    display: inline-block;*/
     width: 49%;
     margin: 0;
-    text-align: center;
+    /*    text-align: center;*/
 }
 
 #about article {
-    display: inline-block;
+    /*    display: inline-block;*/
     width: 49%;
-    vertical-align: top;
+    /*    vertical-align: top;*/
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -137,15 +142,20 @@ section .section-header {
     border-radius: 4px;
 }
 
+
 /*Section Skills*/
 
+/*
 #skills p {
     text-align: center;
 }
+*/
 
+/*
 #skills .skills-icons {
     text-align: center;
 }
+*/
 
 #skills .skills-icon-item {
     display: inline-block;
@@ -155,11 +165,12 @@ section .section-header {
     margin-bottom: 15px;
 }
 
+
 /*Portfolio*/
 
 #portfolio .portfolio-items {
     font-size: 0;
-    text-align: center;
+    /*    text-align: center;*/
 }
 
 #portfolio .portfolio-single-item {
@@ -215,16 +226,19 @@ section .section-header {
     font-size: 20px;
 }
 
+
 /*Contact*/
 
 #contact {
     background-color: #213b50;
-    color: #fff;
+    /*    color: #fff;*/
 }
 
+/*
 #contact h2 {
     text-align: left;
 }
+*/
 
 #contact .contact-data,
 #contact .contact-form {
@@ -232,9 +246,11 @@ section .section-header {
     width: 49%;
 }
 
+/*
 #contact .contact-data {
     vertical-align: top;
 }
+*/
 
 #contact .contact-data address a {
     color: #1ac056;
@@ -257,9 +273,11 @@ section .section-header {
     background-color: #fff;
 }
 
+/*
 #contact .contact-form {
     text-align: right;
 }
+*/
 
 #contact .contact-form input,
 #contact .contact-form textarea {
@@ -280,8 +298,8 @@ section .section-header {
     width: 200px;
     background-color: #1ac056;
     border: 1px solid #1ac056;
-    color: #fff;
-    text-transform: uppercase;
+    /*    color: #fff;*/
+    /*    text-transform: uppercase;*/
 }
 
 #contact .contact-form input[type="submit"]:hover {
@@ -289,12 +307,14 @@ section .section-header {
     color: #1ac056;
 }
 
+
 /*Footer*/
+
 #footer {
     background-color: #000;
     padding: 5px;
 }
 #footer p {
     margin: 0;
-    color: #fff
+    /*    color: #fff;*/
 }

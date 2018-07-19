@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700|Roboto:100,200,300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
 
@@ -19,11 +23,13 @@
 </head>
 
 <body>
+
     <!--Navigation-->
-    <nav id="main-nav">
-       	<label for="drop" class="toggle">Menu</label>
-		<input type="checkbox" id="drop" />
-        <ul>
+
+    <nav id="main-nav" class="fixed-top">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="text-right">
             <li><a href="#about">O mnie</a></li>
             <li><a href="#skills">Umiejetnosci</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -31,30 +37,36 @@
         </ul>
     </nav>
 
+
     <!--Header-->
-    <header id="main-header">
-        <div class="main-header-content">
+
+    <header id="main-header" class="position-relative">
+        <div class="main-header-content text-center text-white position-absolute">
             <h1>Sabina <span>Puchała</span></h1>
             <h2>front-end developer</h2>
         </div>
     </header>
 
+
     <!--About-->
+
     <section id="about">
         <h2 class="section-header">O <span>mnie</span></h2>
-        <figure>
+        <figure class="d-inline-block text-center">
             <img src="img/jan-nowak.jpg" alt="Jan Nowak">
         </figure>
-        <article>
+        <article class="d-inline-block align-top">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem, perferendis impedit quo ipsa doloremque numquam illum rerum dicta aspernatur neque, hic vero quas veritatis similique, ut in distinctio esse!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tenetur minima necessitatibus, odio provident minus, quos laudantium dolores repudiandae deleniti, adipisci excepturi facilis nemo omnis assumenda molestias pariatur nobis saepe.</p>
         </article>
     </section>
 
+
     <!-- Skills-->
+
     <section id="skills">
         <h2 class="section-header">Moje <span>umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, cum dolorum a ipsum. Maxime placeat quod hic illum voluptatum possimus alias.</p>
-        <div class="skills-icons">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, cum dolorum a ipsum. Maxime placeat quod hic illum voluptatum possimus alias.</p>
+        <div class="skills-icons text-center">
             <figure class="skills-icon-item">
                 <img src="img/icons/html5.png" alt="html5">
                 <figcaption>HTML 5</figcaption>
@@ -74,11 +86,13 @@
         </div>
     </section>
 
+
     <!--Portfolio-->
+
     <section id="portfolio">
         <h2 class="section-header">Moje <span>portfolio</span></h2>
 
-        <div class="portfolio-items">
+        <div class="portfolio-items text-center">
 
             <div id="portfolio-single-item-1" class="portfolio-single-item">
                 <div class="portfolio-item-mask">
@@ -122,10 +136,12 @@
         </div>
     </section>
 
+
     <!--Contact-->
-    <section id="contact">
-        <h2 class="section-header">Sabina <span>Puchała</span></h2>
-        <div class="contact-data">
+
+    <section id="contact" class="text-white">
+        <h2 class="section-header text-left">Piotr <span>Grzechnik</span></h2>
+        <div class="contact-data align-top">
             <address>
                 <p>ul. Mostowa 6/13 <br>
                 31-061 Kraków 
@@ -142,26 +158,26 @@
             </div>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form text-right">
             <input type="text" placeholder="Imie i nazwisko">
             <input type="email" placeholder="E-mail">
             <textarea name="" id="" placeholder="Wiadomość"></textarea>
-            <input type="submit" value="Wyslij">
+            <input type="submit" value="Wyslij" class="text-uppercase text-white">
         </form>
     </section>
 
-<!--Footer-->
-<footer id="footer">
-    <p>Copyright &copy; Jan Nowak</p>
-</footer>
+
+    <!--Footer-->
+
+    <footer id="footer">
+        <p class="text-white">Copyright &copy; Jan Nowak</p>
+    </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <script src="js/main.js"></script>
-  
+
 </body>
 
 </html>
