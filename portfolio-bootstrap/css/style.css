@@ -1,0 +1,300 @@
+/*General styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    font-weight: 300;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+section {
+    padding: 50px;
+}
+
+section .section-header {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*Navigation*/
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10;
+    transition: all .3s;
+}
+
+#main-nav ul {
+    margin: 0;
+    text-align: right;
+    list-style: none;
+}
+#main-nav.scroll {
+    background-color: #fff;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-nav.scroll ul li a {
+    color: #1ac056;
+}
+
+#main-nav ul li a:hover {
+    color: #1ac056;
+}
+
+#main-nav.scroll ul li a:hover {
+    color: #291f1a;
+}
+
+#main-nav #drop,  #main-nav .toggle {
+    display: none;
+}
+/*Header styles*/
+
+#main-header {
+    position: relative;
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#main-header .main-header-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+#main-header .main-header-content h1 {
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+#main-header .main-header-content h2 {
+    font-weight: 200;
+    font-size: 2em;
+}
+
+/*Section About*/
+
+#about {
+    background-color: #f9fcfe;
+}
+
+#about figure {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    text-align: center;
+}
+
+#about article {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#about figure img {
+    max-height: 350px;
+    max-width: 100%;
+    border: 15px solid #fff;
+    border-radius: 4px;
+}
+
+/*Section Skills*/
+
+#skills p {
+    text-align: center;
+}
+
+#skills .skills-icons {
+    text-align: center;
+}
+
+#skills .skills-icon-item {
+    display: inline-block;
+}
+
+#skills .skills-icon-item img {
+    margin-bottom: 15px;
+}
+
+/*Portfolio*/
+
+#portfolio .portfolio-items {
+    font-size: 0;
+    text-align: center;
+}
+
+#portfolio .portfolio-single-item {
+    height: 350px;
+    width: 33%;
+    display: inline-block;
+    font-size: initial;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#portfolio #portfolio-single-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio #portfolio-single-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio #portfolio-single-item-3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+#portfolio .portfolio-item-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 61, 79, 0.8);
+    padding: 10px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+#portfolio .portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+
+#portfolio .portfolio-item-content {
+    border: 1px solid #fff;
+    height: 100%;
+    color: #fff;
+    padding: 6px;
+}
+
+#portfolio .portfolio-item-inner {
+    margin-top: 10px;
+}
+
+#portfolio .portfolio-item-inner a {
+    color: #fff;
+    font-size: 20px;
+}
+
+/*Contact*/
+
+#contact {
+    background-color: #213b50;
+    color: #fff;
+}
+
+#contact h2 {
+    text-align: left;
+}
+
+#contact .contact-data,
+#contact .contact-form {
+    display: inline-block;
+    width: 49%;
+}
+
+#contact .contact-data {
+    vertical-align: top;
+}
+
+#contact .contact-data address a {
+    color: #1ac056;
+}
+
+#contact .contact-social a {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+#contact .contact-social a:hover {
+    color: #213b50;
+    background-color: #fff;
+}
+
+#contact .contact-form {
+    text-align: right;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #2b4a64;
+    border: none;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+    background-color: #426684;
+}
+
+#contact .contact-form input[type="submit"] {
+    width: 200px;
+    background-color: #1ac056;
+    border: 1px solid #1ac056;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#contact .contact-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
+
+/*Footer*/
+#footer {
+    background-color: #000;
+    padding: 5px;
+}
+#footer p {
+    margin: 0;
+    color: #fff
+}
